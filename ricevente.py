@@ -8,4 +8,4 @@ while True:
     message = radio.receive()
     if message:
         print(message) #manda messaggio sulla seriale
-    sleep(100)
+    sleep(50)
