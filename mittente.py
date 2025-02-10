@@ -11,14 +11,5 @@ while True:
     movimento_x = accelerometer.get_x()
     movimento_z = accelerometer.get_z()
 
-    radio.send(str(movimento_y)) # casto in stringa
-    display.scroll(movimento_y)  # Mostra il comando sul display
-    sleep(100)
-    
-    radio.send(str(movimento_x)) # casto in stringa
-    display.scroll(movimento_x)  # Mostra il comando sul display
-    sleep(100)
-    
-    radio.send(str(movimento_z)) # casto in stringa
-    display.scroll(movimento_z)  # Mostra il comando sul display
+    radio.send(f"{movimento_x:.3f}, {movimento_y:.3f}, {movimento_z:.3f}") # casto in stringa
     sleep(100)
