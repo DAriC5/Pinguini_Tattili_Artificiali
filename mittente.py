@@ -11,5 +11,5 @@ while True:
     movimento_x = accelerometer.get_x()
     movimento_z = accelerometer.get_z()
 
-    radio.send(f"{movimento_x:.3f}, {movimento_y:.3f}, {movimento_z:.3f}") # casto in stringa
+    radio.send(str(movimento_x) + "," + str(movimento_y) + "," + str(movimento_z)) # casto in stringa
     sleep(100)
