@@ -7,6 +7,5 @@ radio.config(group=23)
 while True:
     message = radio.receive()
     if message:
-        display.scroll(message)
         print(message) #manda messaggio sulla seriale
     sleep(100)
