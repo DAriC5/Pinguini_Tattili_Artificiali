@@ -1,0 +1,10 @@
+Dataset 1(accelerazione):
+av: avanti(accelera)
+id: indietro(accelera)
+dr: dritto(non accellera)
+
+
+Dataset 2(rotazione):
+fm: fermo(non ruota)
+dx: ruota a destra
+sx: ruota a sinistra
