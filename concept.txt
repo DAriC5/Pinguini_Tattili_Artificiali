@@ -1,0 +1,9 @@
+Gioco pinguini:
+
+livello 1: solo tagliare la strada
+livello 2: si può accellerare
+livello 3: il livello si rimpicciolisce
+livello 4: i blocchetti hanno più livelli di rottura
+livello 5: dettagli
+
+Gioco 
