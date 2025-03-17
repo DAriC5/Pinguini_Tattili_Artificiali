@@ -1,0 +1,42 @@
+INDICAZIONI DI ARY AL FONDO
+
+INDICAZIONI CHAT ORA
+Per creare un gioco dove un'IA e un giocatore umano si sfidano cercando di eliminarsi a vicenda, dovrai modificare il tuo GridWorld in diversi modi. Ecco una spiegazione concettuale di come potresti implementarlo:
+
+1. **Aggiungi due agenti alla griglia**:
+   - Modifica la classe `GridWorldEnv` per tenere traccia di due posizioni: `agent_pos` (per l'IA) e `player_pos` (per il giocatore umano)
+   - Inizializza queste posizioni in punti diversi della griglia durante il reset
+
+2. **Traccia le celle visitate**:
+   - Aggiungi una struttura dati (ad esempio una matrice) per tenere traccia delle celle visitate da ciascun agente
+   - Quando un agente lascia una cella, marcala come "vuota" o "scomparsa"
+
+3. **Modifica il ciclo di gioco**:
+   - Alterna i turni tra l'IA e il giocatore umano
+   - Per l'IA, puoi continuare a usare `action_space.sample()` o implementare una strategia più intelligente
+   - Per il giocatore umano, dovrai acquisire input da tastiera (ad esempio usando `input()` o una libreria grafica)
+
+4. **Aggiorna la logica di terminazione**:
+   - Cambia la condizione di terminazione: l'episodio termina quando un giocatore non può più muoversi (è circondato da celle vuote) o quando cade in una cella vuota
+   - Aggiungi una condizione di vittoria per ciascun giocatore
+
+5. **Modifica la funzione `render`**:
+   - Aggiorna la visualizzazione per mostrare entrambi gli agenti e le celle scomparse
+   - Usa caratteri diversi per rappresentare l'IA ('A'), il giocatore ('P') e le celle scomparse ('X')
+
+6. **Implementa la logica di "scomparsa"**:
+   - Nella funzione `step`, dopo aver aggiornato la posizione di un agente, marca la sua posizione precedente come "scomparsa"
+   - Verifica se un agente è su una cella scomparsa o se non ha mosse valide (è circondato da celle scomparse)
+
+7. **Gestisci le collisioni**:
+   - Definisci cosa succede se l'IA e il giocatore tentano di muoversi nella stessa cella
+   - Puoi decidere che i due si eliminano a vicenda o che uno ha la precedenza
+
+Questa è una strategia di alto livello per implementare il tuo gioco. Dovrai anche considerare se vuoi utilizzare un'interfaccia grafica più sofisticata per rendere il gioco più intuitivo per il giocatore umano. Potresti valutare l'uso di librerie come Pygame che ti permetterebbero di creare un'interfaccia visiva più accattivante.
+
+
+INDICAZIONI ARY:
+
+- fai scomparire i blocchi FATTO
+- muore se cade in un blocco vuoto FATTO
+- aggiungere il player DA FARE

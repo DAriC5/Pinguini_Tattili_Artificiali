@@ -108,7 +108,7 @@ class GridWorldEnv(gym.Env):
 register(
     id='GridWorld-v0',
     entry_point='evirorment:GridWorldEnv',
-    max_episode_steps=100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+    max_episode_steps = 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
 )
 
 # Esempio di utilizzo
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     import gymnasium as gym
     
     # Crea l'ambiente
-    env = gym.make('GridWorld-v0')  
+    env = gym.make('GridWorld-v0', grid_size = 7)  
 
     # Resetta l'ambiente
     observation, info = env.reset()
