@@ -1,12 +1,12 @@
 from microbit import *
 import radio
-
 radio.on()
 radio.config(group=23)
     
     
 while True:
     # Controlla le inclinazioni
+    display.show(Image.HEART)
     movimento_y = accelerometer.get_y()
     movimento_x = accelerometer.get_x()
     movimento_z = accelerometer.get_z()
