@@ -5,7 +5,8 @@ radio.config(group=23)
 
 
 while True:
+    display.show(Image.HEART)
     message = radio.receive()
     if message:
-        print(message) #manda messaggio sulla seriale
+        print(message)
     sleep(50)
