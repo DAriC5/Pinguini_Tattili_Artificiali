@@ -1,8 +1,8 @@
-# PINGUINI TATTICI ARTIFICIALI
+# PINGUINI TATTILI ARTIFICIALI
 
 ## Descrizione
 
-**PINGUINI TATTICI ARTIFICIALI** è un progetto di videogioco sviluppato per PLACEHOLDER. Il gioco incorpora intelligenza artificiale per PLACEHOLDER.
+**PINGUINI TATTILI ARTIFICIALI** è un progetto di videogioco sviluppato per PLACEHOLDER. Il gioco incorpora intelligenza artificiale per PLACEHOLDER.
 
 ## Struttura della Repository
 
