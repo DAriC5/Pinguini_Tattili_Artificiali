@@ -65,12 +65,6 @@ Per eseguire il progetto, assicurati di avere installato:
    pip install -r requirements.txt
    ```
 
-   > Se non c'è un file `requirements.txt`, puoi installare manualmente le librerie con:
-
-   ```bash
-   pip install numpy pandas scikit-learn matplotlib joblib
-   ```
-
 ## Utilizzo
 
 1. Addestra o carica i modelli di machine learning inclusi (`*.joblib`).
